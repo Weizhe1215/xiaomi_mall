@@ -111,6 +111,19 @@
         .left{
             float: left;
         }
+        .app{
+            position: relative;
+        }
+        .app img{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            display: none;
+            margin: 0 auto
+        }
+        .app:hover img{
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -120,6 +133,11 @@
                 <a>小米商城</a>
                 <a>MIUI</a>
                 <a>云服务</a>
+                <a class="app">下载app
+                    <div class="download">
+                        <img src="image/qr.png">
+                    </div>
+                </a>
                 <a>有品</a>
                 <a>开放平台</a>
             </div>
